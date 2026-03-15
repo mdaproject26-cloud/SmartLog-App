@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartLog - Warehouse Management System</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome untuk Icon (Open Source) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2><i class="fas fa-boxes-stacked"></i> SmartLog</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="active">
+              <a href="#dashboard"
+                ><i class="fas fa-chart-line"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#products"><i class="fas fa-box"></i> Master Produk</a>
+            </li>
+            <li>
+              <a href="#locations"
+                ><i class="fas fa-map-marker-alt"></i> Master Lokasi</a
+              >
+            </li>
+            <li>
+              <a href="#inventory"
+                ><i class="fas fa-warehouse"></i> Inventory</a
+              >
+            </li>
+            <li>
+              <a href="#inbound"
+                ><i class="fas fa-file-import"></i> Inbound (PO)</a
+              >
+            </li>
+            <li>
+              <a href="#outbound"
+                ><i class="fas fa-file-export"></i> Outbound (SO)</a
+              >
+            </li>
+            <li>
+              <a href="#reports"
+                ><i class="fas fa-file-contract"></i> Reports</a
+              >
+            </li>
+            <li>
+              <a href="#users"
+                ><i class="fas fa-users-cog"></i> User Management</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <header class="top-navbar">
+          <div class="breadcrumb">
+            <span id="current-page">Dashboard</span>
+          </div>
+          <div class="user-info">
+            <span class="wh-label"
+              ><i class="fas fa-building"></i> WH: Jakarta Main</span
+            >
+            <span class="user-role">Admin</span>
+            <button class="btn-logout">
+              <i class="fas fa-sign-out-alt"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- Dynamic Content Container -->
+        <section id="content-area" class="content-area">
+          <!-- Konten akan diisi oleh JavaScript -->
+          <div class="dashboard-preview">
+            <h3>Welcome, Admin!</h3>
+            <p>Pilih menu di samping untuk mulai mengelola gudang.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
